@@ -16,7 +16,7 @@ const routes = [
         name: 'post.create',
         component: PostCreate,
         meta: {
-            pageTitle: 'New Post'
+            pageTitle: 'Novo Post'
         }
     },
 ];
