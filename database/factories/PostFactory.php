@@ -22,6 +22,7 @@ class PostFactory extends Factory
         return [
             'title' => $this->faker->text(20),
             'content' => $this->faker->paragraph(5, true),
+            'thumbnail' => $this->faker->text(20),
             'category_id' => $categoryIDs->random(),
         ];
     }

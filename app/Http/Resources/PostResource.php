@@ -20,6 +20,7 @@ class PostResource extends JsonResource
             'category' => $this->category->name,
             'title' => Str::limit($this->title, 15, '...'),
             'content' => Str::limit($this->content, 50, '...'),
+            'thumbnail' => $this->thumbnail,
             'created_at' => $this->created_at->format('d/m/Y : H:i')
         ];
     }

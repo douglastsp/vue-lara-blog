@@ -26,6 +26,7 @@ class StorePostRequest extends FormRequest
         return [
             'title'=> 'required',
             'content'=> 'required',
+            'thumbnail'=> 'required',
             'category_id' => ['required', 'exists:categories,id']
         ];
     }
@@ -35,6 +36,7 @@ class StorePostRequest extends FormRequest
         return [
             'title' => 'Título',
             'content' => 'Texto',
+            'thumbnail' => 'Capa',
             'category_id' => 'Categoria'
         ];
     }
